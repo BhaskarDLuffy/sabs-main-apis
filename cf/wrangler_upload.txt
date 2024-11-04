@@ -1,0 +1,6 @@
+f/cert.pem --key cf/pkey.pem --name my-client-cert
+Uploading mTLS Certificate my-client-cert...
+Success! Uploaded mTLS Certificate my-client-cert
+ID: 92ef8f8c-74d4-46dc-9bcc-90f69631332b
+Issuer: CN=Managed CA b1bf016bc2ffab008b2b2780c642befe,OU=www.cloudflare.com,O=Cloudflare\, Inc.,L=San Francisco,ST=California,C=US
+Expires on 11/4/2025

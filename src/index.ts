@@ -13,9 +13,15 @@ app.get('/', (c) => {
   const data: any = {
     animes: ["Naruto", "One Piece", "Kaiju No 8"]
   }
-  return c.json(data, 200, {
-    'Content-Type': 'application/json'
-  })
+  try {
+    return c.json(data, 200, {
+      'Content-Type': 'application/json'
+    })
+  } catch (err) {
+    return c.json(JSON.stringify(err), 404, {
+      'Content-Type': 'application/json'
+    })
+  }
 })
 
 export default app
